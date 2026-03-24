@@ -1,17 +1,19 @@
 package com.airtribe.learntrack.entity;
 
+import com.airtribe.learntrack.enums.CourseStatus;
+
 public class Course {
     private int id;
     private String courseName;
     private String description;
     private int durationInWeeks;
-    private boolean active;
+    private CourseStatus status;
 
-    public Course(int id, String courseName,String description,int durationInWeeks,boolean active){
+    public Course(int id, String courseName,String description,int durationInWeeks,CourseStatus status){
         this.id = id;
         this.courseName = courseName;
         this.durationInWeeks = durationInWeeks;
-        this.active = active;
+        this.status = status;
         this.description = description;
     }
     public Course(){
@@ -42,10 +44,10 @@ public class Course {
     public void setCourseName(String courseName){
         this.courseName = courseName;
     }
-    public boolean isActive(){
-        return active;
+    public CourseStatus getStatus(){
+        return status;
     }
-    public void setActive(boolean active){
-        this.active = active;
+    public void setStatus(CourseStatus status){
+        this.status = status;
     }
 }

@@ -1,13 +1,15 @@
 package com.airtribe.learntrack.entity;
 
+import com.airtribe.learntrack.enums.EnrollmentStatus;
+
 public class Enrollment {
     private int id;
     private int studentId;
     private int courseId;
     private String enrollmentDate;
-    private String status;
+    private EnrollmentStatus status;
 
-    public Enrollment(int id, int studentId,int courseId,String enrollmentDate,String status){
+    public Enrollment(int id, int studentId,int courseId,String enrollmentDate,EnrollmentStatus status){
         this.id = id;
         this.studentId = studentId;
         this.courseId=courseId;
@@ -42,10 +44,10 @@ public class Enrollment {
     public void setEnrollmentDate(String enrollmentDate){
         this.enrollmentDate = enrollmentDate;
     }
-    public String getStatus(){
+    public EnrollmentStatus getStatus(){
         return status;
     }
-    public void setStatus(String status){
+    public void setStatus(EnrollmentStatus status){
         this.status = status;
     }
 }
