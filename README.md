@@ -6,7 +6,7 @@ students, courses and enrollments.
 
 ### Features
 **Student Management**
-- Add, view, search and deactivate students.
+- Add, view, search and deactivate students
 
 **Course Management**
 - Add, view, activate and deactivate courses
